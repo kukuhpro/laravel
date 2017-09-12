@@ -1,7 +1,7 @@
 #!/bin/sh
 # Based in this script: https://raw.githubusercontent.com/mhart/alpine-node/base-4.5.0/Dockerfile
 
-export CONFIG_FLAGS="--fully-static" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
+export CONFIG_FLAGS="" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
 
 apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg
 cd /tmp || exit 1
