@@ -1,4 +1,4 @@
-FROM php:alpine
+FROM php:7.1.9-alpine
 MAINTAINER hitalos <hitalos@gmail.com>
 
 RUN apk update && apk upgrade && apk add git
