@@ -3,12 +3,10 @@
 # laravel
 Docker image to run PHP (supporting Laravel) and Node projects.
 
-This image it's for development. **Optimize to use in production!**
-
 In the latest update, I changed the base image to `php:alpine` for size optimizing.
 
 ## Tags
-* [**`latest`**:](https://github.com/hitalos/laravel/blob/master/Dockerfile)  
+* [**`7.1.9-alpine`**:](https://github.com/hitalos/laravel/blob/master/Dockerfile)  
  * `php` 7.1.9
    * `composer` 1.5.1
  * `nodejs` 8.4.0
@@ -29,12 +27,12 @@ In the latest update, I changed the base image to `php:alpine` for size optimizi
 * `mongodb`
 
 ## Installing
-    docker pull hitalos/laravel
+    docker pull kukuhpro/laravel-hub
 
 ## Using
 
 ### With `docker`
-    docker run --name <container_name> -d -v $PWD:/var/www -p 80:80 hitalos/laravel
+    docker run --name <container_name> -d -v $PWD:/var/www -p 80:80 kukuhpro/laravel-hub
 Where $PWD is the laravel installation folder.
 
 ### With `docker-compose`
@@ -59,7 +57,7 @@ Then run using this command:
 If you want to use a database, you can create your `docker-compose.yml` with two containers.
 ```
 web:
-    image: hitalos/laravel:latest
+    image: kukuhpro/laravel-hub:latest
     ports:
         - 80:80
     volumes:
