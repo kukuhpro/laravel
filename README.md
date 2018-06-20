@@ -40,7 +40,7 @@ Where $PWD is the laravel installation folder.
 Create a `docker-compose.yml` file in the root folder of project using this as a template:
 ```
 web:
-    image: hitalos/laravel:latest
+    image: kukuhpro/laravel-hub:latest
     ports:
         - 80:80
     volumes:
